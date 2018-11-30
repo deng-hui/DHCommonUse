@@ -3,4 +3,12 @@ target 'DH_CommonUse_Tests' do
   pod 'DH_CommonUse', :path => '../'
   
   
+   	pod 'AFNetworking'
+	pod 'Reachability'
+    pod 'Masonry'
+    pod 'SDWebImage'
+    pod 'MBProgressHUD'
+    pod 'FLAnimatedImage'
+
+
 end
