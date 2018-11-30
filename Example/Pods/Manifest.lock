@@ -1,0 +1,16 @@
+PODS:
+  - DH_CommonUse (0.1.0)
+
+DEPENDENCIES:
+  - DH_CommonUse (from `../`)
+
+EXTERNAL SOURCES:
+  DH_CommonUse:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DH_CommonUse: f3713e200f6d1e37f7cae6ee89022f55c369afb1
+
+PODFILE CHECKSUM: ce3a74e63ff36b3af9d6e24b466f1e0cc9d8b559
+
+COCOAPODS: 1.6.0.beta.2

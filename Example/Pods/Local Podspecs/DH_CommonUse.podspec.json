@@ -1,0 +1,22 @@
+{
+  "name": "DH_CommonUse",
+  "version": "0.1.0",
+  "summary": "A short description of DH_CommonUse.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/王登辉/DH_CommonUse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "王登辉": "wangdenghui@douyu.tv"
+  },
+  "source": {
+    "git": "https://github.com/王登辉/DH_CommonUse.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DH_CommonUse/Classes/**/*"
+}
