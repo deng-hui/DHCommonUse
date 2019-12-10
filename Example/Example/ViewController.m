@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DHInjectionViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -22,9 +23,15 @@
 {
     [super viewDidLoad];
     _dataArray = @[@"push",
-                   @"present"];
+                   @"present",
+                   @"injection"
+                    ];
     
     [self configureSubviews];
+    
+#ifdef DEBUG
+    NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
 }
 
 #pragma mark - views
@@ -57,6 +64,9 @@
     } else if ([title isEqualToString:@"present"]) {
         UIViewController *vc = [[UIViewController alloc] init];
         [self presentViewController:vc animated:YES completion:nil];
+    } else if ([title isEqualToString:@"injection"]) {
+        DHInjectionViewController *vc = [[DHInjectionViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

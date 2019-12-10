@@ -19,6 +19,7 @@
 		CF71A7C621B146DE00838576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF71A7C521B146DE00838576 /* Assets.xcassets */; };
 		CF71A7C921B146DE00838576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF71A7C721B146DE00838576 /* LaunchScreen.storyboard */; };
 		CF71A7CC21B146DE00838576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF71A7CB21B146DE00838576 /* main.m */; };
+		CFACA503239F5B48008BB4BB /* DHInjectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		CF71A7C821B146DE00838576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF71A7CA21B146DE00838576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF71A7CB21B146DE00838576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFACA501239F5B48008BB4BB /* DHInjectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHInjectionViewController.h; sourceTree = "<group>"; };
+		CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHInjectionViewController.m; sourceTree = "<group>"; };
 		D5EEB76567B372809A618E9C /* Pods_DH_CommonUse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DH_CommonUse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,8 @@
 				CF71A7BD21B146DD00838576 /* AppDelegate.m */,
 				CF71A7BF21B146DD00838576 /* ViewController.h */,
 				CF71A7C021B146DD00838576 /* ViewController.m */,
+				CFACA501239F5B48008BB4BB /* DHInjectionViewController.h */,
+				CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */,
 				CF71A7C221B146DD00838576 /* Main.storyboard */,
 				CF71A7C521B146DE00838576 /* Assets.xcassets */,
 				CF71A7C721B146DE00838576 /* LaunchScreen.storyboard */,
@@ -330,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFACA503239F5B48008BB4BB /* DHInjectionViewController.m in Sources */,
 				CF71A7C121B146DD00838576 /* ViewController.m in Sources */,
 				CF71A7CC21B146DE00838576 /* main.m in Sources */,
 				CF71A7BE21B146DD00838576 /* AppDelegate.m in Sources */,
