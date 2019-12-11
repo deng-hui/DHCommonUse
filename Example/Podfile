@@ -1,5 +1,5 @@
-use_frameworks!
-target 'DH_CommonUse_Tests' do
+#use_frameworks!
+target 'Example' do
   pod 'DH_CommonUse', :path => '../'
   
   

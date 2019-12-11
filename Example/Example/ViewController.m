@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DHInjectionViewController.h"
+#import "DHSocketViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -24,7 +25,8 @@
     [super viewDidLoad];
     _dataArray = @[@"push",
                    @"present",
-                   @"injection"
+                   @"injection",
+                   @"socket"
                     ];
     
     [self configureSubviews];
@@ -66,6 +68,9 @@
         [self presentViewController:vc animated:YES completion:nil];
     } else if ([title isEqualToString:@"injection"]) {
         DHInjectionViewController *vc = [[DHInjectionViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"socket"]) {
+        DHSocketViewController *vc = [[DHSocketViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -30,13 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DH_CommonUse/Classes/**/*'
+  s.source_files = 'DH_CommonUse/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'DH_CommonUse' => ['DH_CommonUse/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'DH_CommonUse/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

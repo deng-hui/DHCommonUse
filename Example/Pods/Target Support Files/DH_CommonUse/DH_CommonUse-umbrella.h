@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "DYLocalSocket.h"
+#import "DYLocalSocketClient.h"
 
 FOUNDATION_EXPORT double DH_CommonUseVersionNumber;
 FOUNDATION_EXPORT const unsigned char DH_CommonUseVersionString[];

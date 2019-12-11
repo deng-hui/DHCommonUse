@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DH_CommonUse/Classes/**/*"
+  "source_files": "DH_CommonUse/Classes/**/*.{h,m}",
+  "public_header_files": "DH_CommonUse/Classes/**/*.h"
 }
