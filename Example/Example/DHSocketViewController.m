@@ -10,6 +10,10 @@
 #import "DHSocketClientViewController.h"
 #import "DYLocalSocket.h"
 
+#import "GCDAsyncSocketCommunicationManager.h"
+#import "GACConnectConfig.h"
+#define kDefaultChannel @"dkf"
+
 @interface DHSocketViewController ()
 @property(nonatomic, strong) DHSocketClientViewController *clientVc;
 @property(nonatomic, strong) UIButton *startButton;
@@ -17,6 +21,10 @@
 @property(nonatomic, strong) UILabel *statsLabel;
 
 @property(nonatomic, strong) DYLocalSocket *socket;
+
+
+@property (nonatomic, strong) GACConnectConfig *connectConfig;
+
 @end
 
 @implementation DHSocketViewController
@@ -50,14 +58,39 @@
     [self.view addSubview:_statsLabel];
     
     _socket = [[DYLocalSocket alloc] init];
+    
 }
 
 - (void)didClickStart:(id)sender {
     [_socket start];
+    
+    // 2.自定义配置连接环境
+//        [[GCDAsyncSocketCommunicationManager sharedInstance] createServerSocketWithConfig:self.connectConfig];
 }
 
 - (void)didClickSend:(id)sender {
     [_socket sendMessage];
+    
+    return;
+    [[GCDAsyncSocketCommunicationManager sharedInstance] socketWriteDataWithRequestType:GACRequestType_Beat requestBody:@{@"ddddd":@"wdh-----send"} completion:^(NSError * _Nullable error, id  _Nullable data) {
+#ifdef DEBUG
+        NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
+    }];
 }
 
+
+- (GACConnectConfig *)connectConfig {
+    if (!_connectConfig) {
+        _connectConfig = [[GACConnectConfig alloc] init];
+        _connectConfig.channels = kDefaultChannel;
+        _connectConfig.currentChannel = kDefaultChannel;
+        _connectConfig.host = @"127.0.0.1";
+        _connectConfig.port = 7070;
+        _connectConfig.socketVersion = 5;
+    }
+    _connectConfig.token = @"f14c4e6f6c89335ca5909031d1a6efa9";
+    
+    return _connectConfig;
+}
 @end

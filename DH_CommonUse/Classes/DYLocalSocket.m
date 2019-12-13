@@ -45,7 +45,7 @@
     // 将ip赋值给结构体，inet_addr()函数是将一个点分十进制的IP转换成一个长整数型数
     sockAddr.sin_addr.s_addr = inet_addr(ip);
     // 设置端口号，htons()是将整型变量从主机字节顺序转变成网络字节顺序
-    sockAddr.sin_port = htons(12345);
+    sockAddr.sin_port = htons(7070);
     /*
      * bind函数用于将套接字关联一个地址，返回一个int值，-1为失败
      * 第一个参数指定套接字，就是前面socket函数调用返回额套接字
@@ -100,6 +100,7 @@
     while(1){
         bytesRecv = recv(self.newSocket,recvData,128,0); // recvData为收到的数据
         NSLog(@"服务端接受到数据：%zd 数据：%s",bytesRecv,recvData);
+        [self sendMessage];
         if(bytesRecv == 0){
             break;
         }
@@ -141,6 +142,11 @@
     // Free memory
     freeifaddrs(interfaces);
     NSLog(@"getIPAddress:%@",address);
+    #ifdef DEBUG
+        NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+        return @"127.0.0.1";
+    #endif
+    
     return address;
 }
 

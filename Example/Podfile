@@ -3,12 +3,28 @@ target 'Example' do
   pod 'DH_CommonUse', :path => '../'
   
   
-   	pod 'AFNetworking'
-	pod 'Reachability'
-    pod 'Masonry'
-    pod 'SDWebImage'
-    pod 'MBProgressHUD'
-    pod 'FLAnimatedImage'
+  pod 'AFNetworking'
+  pod 'Reachability'
+  pod 'Masonry'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD'
+  pod 'FLAnimatedImage'
 
 
 end
+
+target 'DH_BroadcastExt' do
+  pod 'DH_CommonUse', :path => '../'
+  
+  
+#  pod 'AFNetworking'
+#  pod 'Reachability'
+#  pod 'Masonry'
+#  pod 'SDWebImage'
+#  pod 'MBProgressHUD'
+#  pod 'FLAnimatedImage'
+
+end
+
+
+

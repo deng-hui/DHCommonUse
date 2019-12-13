@@ -1,27 +1,32 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - DH_CommonUse (0.1.0)
+  - CocoaAsyncSocket (7.6.3)
+  - DH_CommonUse (0.1.0):
+    - AFNetworking (= 3.0.4)
+    - CocoaAsyncSocket
+    - JSONModel
   - FLAnimatedImage (1.0.12)
+  - JSONModel (1.8.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - Reachability (3.2)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -35,7 +40,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CocoaAsyncSocket
     - FLAnimatedImage
+    - JSONModel
     - Masonry
     - MBProgressHUD
     - Reachability
@@ -46,14 +53,16 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  DH_CommonUse: bb2b2888f510046f5080abca114aec1111618cd4
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  DH_CommonUse: f0b9c61540be351f28e472ab31eaf05e39dfd271
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
 
-PODFILE CHECKSUM: bcac54bcd69cbb6786152a2f9f3a21a0f5cc0e84
+PODFILE CHECKSUM: b762c46218c7ab9c6f06c6b3868746f4d224518e
 
 COCOAPODS: 1.7.2

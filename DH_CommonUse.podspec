@@ -36,7 +36,10 @@ TODO: Add long description of the pod here.
   #   'DH_CommonUse' => ['DH_CommonUse/Assets/*.png']
   # }
 
-   s.public_header_files = 'DH_CommonUse/Classes/**/*.h'
+  s.public_header_files = 'DH_CommonUse/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking' ,'3.0.4'
+  s.dependency 'JSONModel'
+  s.dependency 'CocoaAsyncSocket'
+
 end

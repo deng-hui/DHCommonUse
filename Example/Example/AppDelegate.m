@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     
-    [self InjectionIII];
+//    [self InjectionIII];
     
     return YES;
 }

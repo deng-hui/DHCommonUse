@@ -24,7 +24,7 @@
 
 - (void)connect {
     NSString *host = [self getIPAddress];
-    NSNumber *port = @12345;
+    NSNumber *port = @7070;
     
     // 1，创建socket
     int sock = socket(AF_INET, SOCK_STREAM, 0);
@@ -118,7 +118,11 @@
     }
     // Free memory
     freeifaddrs(interfaces);
-    NSLog(@"%@",address);
+    NSLog(@"getIPAddress:%@",address);
+        #ifdef DEBUG
+             NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+             return @"127.0.0.1";
+         #endif
     return address;
 }
 
