@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "DHInjectionViewController.h"
 #import "DHSocketViewController.h"
+#import "DHPresentViewController.h"
+#import "DHStringViewController.h"
+#import "DHInputViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,7 +29,9 @@
     _dataArray = @[@"push",
                    @"present",
                    @"injection",
-                   @"socket"
+                   @"socket",
+                   @"字符串",
+                   @"input",
                     ];
     
     [self configureSubviews];
@@ -64,15 +69,30 @@
         UIViewController *vc = [[UIViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:@"present"]) {
-        UIViewController *vc = [[UIViewController alloc] init];
-        [self presentViewController:vc animated:YES completion:nil];
+        DHPresentViewController *vc = [[DHPresentViewController alloc] init];
+        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        vc.providesPresentationContextTransitionStyle = YES;
+        vc.definesPresentationContext = YES;
+        vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+        
+//        vc.navigationBar.hidden = YES;
+        [UIView transitionWithView:vc.view duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+            [self presentViewController:vc animated:NO completion:nil];
+        } completion:nil];
     } else if ([title isEqualToString:@"injection"]) {
         DHInjectionViewController *vc = [[DHInjectionViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:@"socket"]) {
         DHSocketViewController *vc = [[DHSocketViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"字符串"]) {
+        DHStringViewController *vc = [[DHStringViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"input"]) {
+        DHInputViewController *vc = [[DHInputViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+        
 }
 
 #pragma mark - getter

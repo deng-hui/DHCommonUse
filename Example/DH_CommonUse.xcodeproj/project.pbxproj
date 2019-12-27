@@ -13,6 +13,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		C5E6BE0DF0D6147660D6EBFF /* libPods-DH_BroadcastExt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5726850E558FA20644AC58 /* libPods-DH_BroadcastExt.a */; };
+		CF068DDE23A7B2A7002CAD49 /* DHPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF068DDD23A7B2A7002CAD49 /* DHPresentViewController.m */; };
+		CF25498323B49CF500B32FAF /* DHInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF25498223B49CF500B32FAF /* DHInputViewController.m */; };
+		CF25E3A623B0D40400B32FAF /* DHStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF25E3A523B0D40400B32FAF /* DHStringViewController.m */; };
 		CF2ACD0D23A35B98005D284D /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2ACD0C23A35B98005D284D /* ReplayKit.framework */; };
 		CF2ACD1123A35B98005D284D /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2ACD1023A35B98005D284D /* SampleHandler.m */; };
 		CF2ACD1523A35B98005D284D /* DH_BroadcastExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF2ACD0B23A35B98005D284D /* DH_BroadcastExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,6 +72,12 @@
 		6F6DF33A02E0DEADEACA5C77 /* DH_CommonUse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DH_CommonUse.podspec; path = ../DH_CommonUse.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8EC1EBB9F94F2D743F852831 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77D227E2198169696053A4F /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		CF068DDC23A7B2A7002CAD49 /* DHPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHPresentViewController.h; sourceTree = "<group>"; };
+		CF068DDD23A7B2A7002CAD49 /* DHPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHPresentViewController.m; sourceTree = "<group>"; };
+		CF25498123B49CF500B32FAF /* DHInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHInputViewController.h; sourceTree = "<group>"; };
+		CF25498223B49CF500B32FAF /* DHInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHInputViewController.m; sourceTree = "<group>"; };
+		CF25E3A423B0D40400B32FAF /* DHStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHStringViewController.h; sourceTree = "<group>"; };
+		CF25E3A523B0D40400B32FAF /* DHStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHStringViewController.m; sourceTree = "<group>"; };
 		CF2ACD0B23A35B98005D284D /* DH_BroadcastExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DH_BroadcastExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2ACD0C23A35B98005D284D /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		CF2ACD0F23A35B98005D284D /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
@@ -191,6 +200,25 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CF25498423B59EA200B32FAF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CFACA501239F5B48008BB4BB /* DHInjectionViewController.h */,
+				CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */,
+				CFACA504239F7D36008BB4BB /* DHSocketViewController.h */,
+				CFACA505239F7D36008BB4BB /* DHSocketViewController.m */,
+				CFACA507239F7E7B008BB4BB /* DHSocketClientViewController.h */,
+				CFACA508239F7E7B008BB4BB /* DHSocketClientViewController.m */,
+				CF068DDC23A7B2A7002CAD49 /* DHPresentViewController.h */,
+				CF068DDD23A7B2A7002CAD49 /* DHPresentViewController.m */,
+				CF25E3A423B0D40400B32FAF /* DHStringViewController.h */,
+				CF25E3A523B0D40400B32FAF /* DHStringViewController.m */,
+				CF25498123B49CF500B32FAF /* DHInputViewController.h */,
+				CF25498223B49CF500B32FAF /* DHInputViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		CF2ACD0E23A35B98005D284D /* DH_BroadcastExt */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,12 +236,7 @@
 				CF71A7BD21B146DD00838576 /* AppDelegate.m */,
 				CF71A7BF21B146DD00838576 /* ViewController.h */,
 				CF71A7C021B146DD00838576 /* ViewController.m */,
-				CFACA501239F5B48008BB4BB /* DHInjectionViewController.h */,
-				CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */,
-				CFACA504239F7D36008BB4BB /* DHSocketViewController.h */,
-				CFACA505239F7D36008BB4BB /* DHSocketViewController.m */,
-				CFACA507239F7E7B008BB4BB /* DHSocketClientViewController.h */,
-				CFACA508239F7E7B008BB4BB /* DHSocketClientViewController.m */,
+				CF25498423B59EA200B32FAF /* VC */,
 				CF71A7C221B146DD00838576 /* Main.storyboard */,
 				CF71A7C521B146DE00838576 /* Assets.xcassets */,
 				CF71A7C721B146DE00838576 /* LaunchScreen.storyboard */,
@@ -439,6 +462,9 @@
 				CFACA506239F7D36008BB4BB /* DHSocketViewController.m in Sources */,
 				CF71A7C121B146DD00838576 /* ViewController.m in Sources */,
 				CF71A7CC21B146DE00838576 /* main.m in Sources */,
+				CF25E3A623B0D40400B32FAF /* DHStringViewController.m in Sources */,
+				CF068DDE23A7B2A7002CAD49 /* DHPresentViewController.m in Sources */,
+				CF25498323B49CF500B32FAF /* DHInputViewController.m in Sources */,
 				CF71A7BE21B146DD00838576 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
