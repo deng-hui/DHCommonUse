@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/王登辉/DH_CommonUse'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '王登辉' => 'wangdenghui@douyu.tv' }
+  s.author           = { '王登辉' => '546174654@qq.com' }
   s.source           = { :git => 'https://github.com/王登辉/DH_CommonUse.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -41,5 +41,6 @@ TODO: Add long description of the pod here.
   s.dependency 'AFNetworking' ,'3.0.4'
   s.dependency 'JSONModel'
   s.dependency 'CocoaAsyncSocket'
+  s.dependency 'YYModel'
 
 end

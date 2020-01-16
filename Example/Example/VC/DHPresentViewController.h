@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DHPresentViewController : UIViewController
 
+- (instancetype)initWithPresentationStyleCustom:(BOOL)presentationStyleCustom;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@
 #import "DHPresentViewController.h"
 #import "DHStringViewController.h"
 #import "DHInputViewController.h"
+#import "DHRegularViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -32,10 +33,38 @@
                    @"socket",
                    @"字符串",
                    @"input",
+                   @"正则Regular",
                     ];
     
     [self configureSubviews];
     
+#ifdef DEBUG
+    NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+#ifdef DEBUG
+    NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+#ifdef DEBUG
+    NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+#ifdef DEBUG
+    NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
+#endif
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 #ifdef DEBUG
     NSLog(@"<<<<--wdh-debug-log-->>>>:[%s][line](%@:%d)", __func__, [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__);
 #endif
@@ -69,16 +98,7 @@
         UIViewController *vc = [[UIViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([title isEqualToString:@"present"]) {
-        DHPresentViewController *vc = [[DHPresentViewController alloc] init];
-        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        vc.providesPresentationContextTransitionStyle = YES;
-        vc.definesPresentationContext = YES;
-        vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-        
-//        vc.navigationBar.hidden = YES;
-        [UIView transitionWithView:vc.view duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-            [self presentViewController:vc animated:NO completion:nil];
-        } completion:nil];
+        [self DHPresentViewController];
     } else if ([title isEqualToString:@"injection"]) {
         DHInjectionViewController *vc = [[DHInjectionViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
@@ -91,8 +111,35 @@
     } else if ([title isEqualToString:@"input"]) {
         DHInputViewController *vc = [[DHInputViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"正则Regular"]) {
+        DHRegularViewController *vc = [[DHRegularViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
         
+}
+
+- (void)DHPresentViewController {
+    if (YES) {
+        DHPresentViewController *vc = [[DHPresentViewController alloc] init];
+        
+        [self addChildViewController:vc];
+        [self.view addSubview:vc.view];
+        [vc didMoveToParentViewController:self];
+        
+//        vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//        vc.providesPresentationContextTransitionStyle = YES;
+//        vc.definesPresentationContext = YES;
+//        vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+//
+////        vc.navigationBar.hidden = YES;
+//        [UIView transitionWithView:vc.view duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+//            [self presentViewController:vc animated:NO completion:nil];
+//        } completion:nil];
+    } else {
+        DHPresentViewController *vc = [[DHPresentViewController alloc] initWithPresentationStyleCustom:YES];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+    
 }
 
 #pragma mark - getter

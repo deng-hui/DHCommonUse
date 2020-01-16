@@ -24,6 +24,25 @@
 
     }];
     
+    [self getLaunchTime];
+
+}
+
+-(NSString*)getLaunchTime
+{
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:8];
+//    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+//    NSTimeZone *zone = [NSTimeZone systemTimeZone]; // 获得当前系统的时区
+//
+//    [dateFormatter setTimeZone:zone];// 设定时区
+//
+    // YYYY 获取的年不准
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *currentDateStr = [dateFormatter stringFromDate:currentDate];
+    NSLog(@"time:%@", currentDateStr);
+    return currentDateStr;
 }
 
 /**

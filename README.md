@@ -22,7 +22,6 @@ pod 'DH_CommonUse'
 
 ## Author
 
-王登辉, wangdenghui@douyu.tv
 
 ## License
 

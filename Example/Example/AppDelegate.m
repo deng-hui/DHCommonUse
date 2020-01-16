@@ -17,9 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //    [self InjectionIII];
     
-    
-//    [self InjectionIII];
+    NSArray *arr = @[];
+    NSArray *currentDanmuList = [arr subarrayWithRange:NSMakeRange(0, 0)];
     
     return YES;
 }

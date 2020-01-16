@@ -28,6 +28,8 @@
 		CFACA503239F5B48008BB4BB /* DHInjectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFACA502239F5B48008BB4BB /* DHInjectionViewController.m */; };
 		CFACA506239F7D36008BB4BB /* DHSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFACA505239F7D36008BB4BB /* DHSocketViewController.m */; };
 		CFACA509239F7E7B008BB4BB /* DHSocketClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFACA508239F7E7B008BB4BB /* DHSocketClientViewController.m */; };
+		CFE5452023C33544006F4297 /* DHRegularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE5451F23C33544006F4297 /* DHRegularViewController.m */; };
+		CFE5452223C33C3B006F4297 /* 【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFE5452123C33C3B006F4297 /* 【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt */; };
 		E7CC893C44A27BA80A840DA7 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC1EBB9F94F2D743F852831 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,9 @@
 		CFACA505239F7D36008BB4BB /* DHSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSocketViewController.m; sourceTree = "<group>"; };
 		CFACA507239F7E7B008BB4BB /* DHSocketClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSocketClientViewController.h; sourceTree = "<group>"; };
 		CFACA508239F7E7B008BB4BB /* DHSocketClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSocketClientViewController.m; sourceTree = "<group>"; };
+		CFE5451E23C33544006F4297 /* DHRegularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHRegularViewController.h; sourceTree = "<group>"; };
+		CFE5451F23C33544006F4297 /* DHRegularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHRegularViewController.m; sourceTree = "<group>"; };
+		CFE5452123C33C3B006F4297 /* 【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt"; sourceTree = "<group>"; };
 		E3403C497784AEBF0264FB4A /* Pods-DH_BroadcastExt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH_BroadcastExt.release.xcconfig"; path = "Target Support Files/Pods-DH_BroadcastExt/Pods-DH_BroadcastExt.release.xcconfig"; sourceTree = "<group>"; };
 		EB0091E42E3735FA58AEE7AA /* Pods-DH_BroadcastExt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH_BroadcastExt.debug.xcconfig"; path = "Target Support Files/Pods-DH_BroadcastExt/Pods-DH_BroadcastExt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +220,8 @@
 				CF25E3A523B0D40400B32FAF /* DHStringViewController.m */,
 				CF25498123B49CF500B32FAF /* DHInputViewController.h */,
 				CF25498223B49CF500B32FAF /* DHInputViewController.m */,
+				CFE5451E23C33544006F4297 /* DHRegularViewController.h */,
+				CFE5451F23C33544006F4297 /* DHRegularViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 				CF71A7C721B146DE00838576 /* LaunchScreen.storyboard */,
 				CF71A7CA21B146DE00838576 /* Info.plist */,
 				CF71A7CB21B146DE00838576 /* main.m */,
+				CFE5452123C33C3B006F4297 /* 【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE5452223C33C3B006F4297 /* 【全本校对】《冰与火之歌全集》作者：乔治 R·R·马丁.txt in Resources */,
 				CF71A7C921B146DE00838576 /* LaunchScreen.storyboard in Resources */,
 				CF71A7C621B146DE00838576 /* Assets.xcassets in Resources */,
 				CF71A7C421B146DD00838576 /* Main.storyboard in Resources */,
@@ -462,6 +471,7 @@
 				CFACA506239F7D36008BB4BB /* DHSocketViewController.m in Sources */,
 				CF71A7C121B146DD00838576 /* ViewController.m in Sources */,
 				CF71A7CC21B146DE00838576 /* main.m in Sources */,
+				CFE5452023C33544006F4297 /* DHRegularViewController.m in Sources */,
 				CF25E3A623B0D40400B32FAF /* DHStringViewController.m in Sources */,
 				CF068DDE23A7B2A7002CAD49 /* DHPresentViewController.m in Sources */,
 				CF25498323B49CF500B32FAF /* DHInputViewController.m in Sources */,
